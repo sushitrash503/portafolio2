@@ -6,6 +6,7 @@ body {
 .toggle_btn{
     display: none;
     color: white;
+    margin-rigth: 15px;
     
 }
 /* navbar */
