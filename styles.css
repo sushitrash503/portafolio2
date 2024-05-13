@@ -201,6 +201,7 @@ h3 {
     .toggle_btn{
         display: block;
         color: white;
+         margin-right: 15px;
         
     }
     .icon{
