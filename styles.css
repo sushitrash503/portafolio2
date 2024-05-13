@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E3C533;
+}
+.toggle_btn{
+    display: none;
+    color: white;
+    
+}
+/* navbar */
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Añadido para separar el logo y los enlaces */
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    gap: 16px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    text-align: right;
+    margin: 0;
+    list-style: none;
+    margin-right: 35px;
+}
+
+.links:hover {
+    color: rgb(0, 183, 255);
+}
+
+.logo {
+    width: 55px;
+    margin-left: 35px;
+}
+
+/* Abajo section */
+
+.bloque-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    gap: 100px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.foto1 {
+    width: 400px;
+    height: 470px;
+    margin-left: 30px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    font-style: normal;  
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.hello {
+    text-align: left;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+.iam{
+    margin-left: -65px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 rgb(0, 183, 255);
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 blue;
+  };
+h3 {
+    color: rgb(43, 41, 41);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 992px){
+    .bloque-presentacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+       
+        gap: 100px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .foto1 {
+        width: 250px;
+        height: 300px;
+        animation: fadeIn 0.5s ease-out;
+    }
+    
+    h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bolder;
+        font-style: normal;  
+        font-size: 60px;
+        text-align: center;
+        margin: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .hello {
+        text-align: left;
+        margin: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    .iam{
+        margin-left: -65px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    button {
+        background-color: white;
+        color: black;
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+        animation: fadeIn 1.5s ease-in-out forwards;
+      }
+      
+      button:hover {
+        transform: translateY(-4px) translateX(-2px);
+        box-shadow: 2px 5px 0 0 rgb(0, 183, 255);
+      };
+      
+      button:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 blue;
+      };
+    h3 {
+        color: rgb(43, 41, 41);
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+    }
+}
+@media(max-width: 576px) {
+    .links{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+        color: white;
+        
+    }
+    .icon{
+        display: block;
+    }
+    .icons{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons-logos{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .bloque-presentacion {
+        display: flex;
+        flex-direction: column; /* Cambiar de fila a columna */
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .foto1 {
+        width: 250px;
+        height: 300px;
+        animation: fadeIn 0.5s ease-out;
+        position: relative;
+        margin-top: 45px;
+    }
+    
+    h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bolder;
+        font-style: normal;  
+        font-size: 60px;
+        text-align: center;
+        
+        margin: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .hello {
+        text-align: left;
+        margin: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .iam {
+        margin-left: -65px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    button {
+        background-color: white;
+        color: black;
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+      
+    button:hover {
+        transform: translateY(-4px) translateX(-2px);
+        box-shadow: 2px 5px 0 0 rgb(0, 183, 255);
+    }
+      
+    button:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 blue;
+    }
+    
+    h3 {
+        color: rgb(43, 41, 41);
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+    }
+    
+    
+}
